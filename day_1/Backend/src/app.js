@@ -4,6 +4,8 @@ const app = express();
 app.use(express.json());
 app.use(cors())
 const Note_model = require("../model/notesModel");
+const path = require("path")
+app.use(express.static("./public"))
 
 
 app.post("/api/notes", async (req, res) => {
@@ -53,6 +55,11 @@ app.patch("/api/notes/:id", async (req, res) => {
         Message:"note updated successsfully"
     })
     
+})
+
+
+app.use(`*name`, (req, res) => {
+  res.sendFile(path.join(__dirname,"..","/public/dist/index.html"))
 })
 module.exports = app;
 
