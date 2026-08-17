@@ -4,7 +4,7 @@ const App = () => {
   const [notes, setNotes] = useState("");
   return (
     <div>
-      hye 
+      hye  from react 
     </div>
   )
 }
