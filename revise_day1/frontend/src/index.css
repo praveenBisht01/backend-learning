@@ -27,3 +27,17 @@ html{
     padding-inline: 3rem;
     flex-wrap: wrap;
 }
+
+
+.note-create-form{
+    display: flex;
+    gap: 1rem;
+    padding-inline: 3 rem;
+    padding-block: 1rem;
+
+}
+
+.delete-note{
+    padding:0.3rem;
+    margin-top: 1rem;
+}
