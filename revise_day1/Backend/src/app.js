@@ -3,6 +3,8 @@ const app = express();
 const mongoose = require("mongoose");
 app.use(express.json());
 const Note_model = require("./model/notemodel");
+const cors = require("cors");
+app.use(cors());
 
 // post data on database   //
 app.post("/api/notes", async (req, res) => {

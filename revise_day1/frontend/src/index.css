@@ -25,4 +25,5 @@ html{
     gap: 1rem;
     padding-block: 1rem;
     padding-inline: 3rem;
+    flex-wrap: wrap;
 }
