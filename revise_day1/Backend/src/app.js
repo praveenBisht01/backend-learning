@@ -8,10 +8,11 @@ app.use(cors());
 const path = require("path")
 app.use(express.static("./public"));
 
+
 // post data on database   //
 app.post("/api/notes", async (req, res) => {
   const { title, description } = req.body;
-a
+  
   const note = await Note_model.create({
     title,
     description,
