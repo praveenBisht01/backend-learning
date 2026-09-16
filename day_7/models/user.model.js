@@ -27,6 +27,9 @@ const userSchema = new mongoose.Schema({
     type: String,
     default: "https://ik.imagekit.io/vg0av8xap/Default_user.jpg",
   },
+
+  
+
 });
 
 const UserModel = mongoose.model("Users", userSchema);
